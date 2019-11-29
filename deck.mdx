@@ -7,7 +7,7 @@ import QRCode from "qrcode.react";
 import Mono from "./Mono.js";
 
 <Head>
-  <title>Delightful CLI Tools with Node and Ink</title>
+  <title>Delightful CLI Tools with Node and React (feat. Ink)</title>
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@hexrcs" />
   <meta name="twitter:title" content="Delightful CLI Tools with Node and Ink" />
@@ -27,9 +27,10 @@ import Mono from "./Mono.js";
 
 # Delightful Command-Line Interfaces
 
-<h2>with Node and Ink <Emoji svg text="🌈" /></h2>
+<h2>with Node and React <i>(feat. Ink <Emoji svg text="🌈" />)</i></h2>
+<h2></h2>
 
-<Mono>Xiaoru Li || "Leo" || @hexrcs</Mono>
+<Mono>@hexrcs</Mono>
 
 ---
 
@@ -45,7 +46,6 @@ import Small from "./Small.js";
   style={{ width: "50px", height: "auto" }}
 /> -->
 
-You can also call me _Leo_
 
 
 <Small><i>@hexrcs</i> on the web</Small>
@@ -71,9 +71,7 @@ Throughout the years, CLI has evolved, more features were added, but the basic p
   style={{ width: "80%", height: "auto" }}
 />
 
-<Appear>
   <h3>1978, 80x24, ANSI support</h3>
-</Appear>
 
 <Notes>
 Among all those terminals, the VT100 is the first to support a standard called the ANSI escape code, which allows meta features like erasing printed text, changing text color, and so on.
@@ -189,7 +187,7 @@ This is possible because the dev tools themselves are a webpage, so it's only na
 
 ---
 
-## `xterm` ain't Chrome (or FireFox)
+## Our good ol' Terminal ain't Chrome (or FireFox)
 
 # <Emoji svg text="😔" />
 
@@ -355,7 +353,7 @@ Move 1000 columns to the left, remove everything till end of the line
 
 ---
 
-## What we've just learnt can easily be done
+## What we've just learned can easily be done
 
 ## with libraries like `chalk` and `log-update`
 
@@ -490,15 +488,14 @@ Here, we don't need to manually remove col X to col Y, we just say, we want a ti
 <Appear>
   <h3>That way we don't need to count absolute columns or rows by hand...</h3>
   <h3>Automatic width, heights, margins...</h3>
+  
+  <h2>Flexbox just flows like water</h2>
 </Appear>
 
 # <Emoji svg text="🤔" />
 
 <Notes>I'm not an expert on CSS...</Notes>
 
----
-
-## Flexbox just flows...
 
 ---
 
@@ -528,11 +525,12 @@ Here, we don't need to manually remove col X to col Y, we just say, we want a ti
 
 ```jsx
 import React, { useEffect, useState } from "react";
-import { Text, Box, Color, render, useInput } from "ink";
+import { Text, Box, Color, useInput, render } from "ink";
 import Gradient from "ink-gradient";
 import BigText from "ink-big-text";
 import Spinner from "ink-spinner";
 import TextInput from "ink-text-input";
+import Ascii from "ink-ascii";
 ```
 
 Import built-in Ink components and 3rd party utilities <Emoji svg text="☝️" />
@@ -569,7 +567,7 @@ Classic counter example, CLI edition <Emoji svg text="☝️" />
   dangerouslySetInnerHTML={{
     __html: `
       <video
-        style="height: 80vh;"
+        style="height: 90vh;"
         loop
         autoplay
         muted
@@ -689,7 +687,7 @@ The status info bar <Emoji svg text="☝️" />
   dangerouslySetInnerHTML={{
     __html: `
       <video
-        style="height: 80vh;"
+        style="height: 90vh;"
         loop
         autoplay
         muted
@@ -721,7 +719,9 @@ MDX rendered directly to the terminal!
 
 ### Even more awesomeness with Ink
 
-![Pastel logo](./images/pastel-logo.png)
+<Appear>
+<Image src="./images/pastel-logo.png" style={{height: "50vh", width: "50vw"}} size="contain" />
+</Appear>
 
 <Notes>
 We've been mainly focusing on dynamic user interfaces tonight, but in many cases we actually want as little user interaction with the program as possible, which helps with automation.
@@ -742,10 +742,11 @@ git-js/
     - stash/
       - index.js
       - clear.js
+      - pop.js
         ...
 ```
 
-`git stash clear` anyone?
+`git stash pop` anyone?
 
 <Notes>
 This is particularly useful for building an app with commands and subcommands like git. You can nest directories, and pastel will convert the hierarchy into nested commands. The logic of each command is encapsulated its own React component, so you have a completely modularized application.
@@ -852,7 +853,6 @@ Source code of slides and demos can be found here <Emoji svg text="👇" />
 
 `https://github.com/hexrcs/201911-tsberlin-node-cli-talk`
 
-## I survived! <Emoji svg text=":D" />
 
 ---
 
