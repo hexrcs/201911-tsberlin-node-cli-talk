@@ -28,7 +28,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "esm": "^3.2.25",
-    "got": "^9.6.0",
+    "got": "^11.8.5",
     "ink": "^2.5.0",
     "ink-big-text": "^1.0.1",
     "ink-gradient": "^1.0.0",
